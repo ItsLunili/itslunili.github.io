@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunili — Projects</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #0f0f14;
+            color: white;
+        }
+
+        .container {
+            width: min(600px, 90%);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #aaa;
+            margin-bottom: 40px;
+        }
+
+        .projects {
+            display: grid;
+            gap: 16px;
+        }
+
+        a {
+            display: block;
+            padding: 20px;
+            border-radius: 16px;
+            background: #191923;
+            color: white;
+            text-decoration: none;
+            border: 1px solid #2b2b38;
+            transition: .25s;
+        }
+
+        a:hover {
+            transform: translateY(-3px);
+            border-color: #a855f7;
+            box-shadow: 0 0 30px rgba(168,85,247,.25);
+        }
+
+        .name {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .desc {
+            margin-top: 6px;
+            color: #999;
+            font-size: .9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Lunili</h1>
+    <p>Projects, tools, and experiments.</p>
+
+    <div class="projects">
+        <a href="/voxly/">
+            <div class="name">Voxly TTS</div>
+            <div class="desc">Discord text-to-speech bot</div>
+        </a>
+
+        <a href="/keyjolts/">
+            <div class="name">KeyJolts</div>
+            <div class="desc">Music and productivity experiments</div>
+        </a>
+
+        <a href="/playrooms/">
+            <div class="name">The Playrooms</div>
+            <div class="desc">A horror game project</div>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
