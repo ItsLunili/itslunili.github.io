@@ -82,6 +82,39 @@
             font-weight: 600;
         }
 
+        /* HIGHLIGHT */
+        .highlight {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+
+        .highlight::before {
+            content: "";
+            position: absolute;
+            left: -4px;
+            right: -4px;
+            bottom: 4%;
+            height: 45%;
+            background: #f0c1ffda;
+            border-radius: 8px;
+            z-index: -1;
+            transform: rotate(-2.5deg);
+            animation: highlight-in 0.9s ease forwards;
+            transform-origin: left;
+        }
+
+        @keyframes highlight-in {
+            from {
+                transform: scaleX(0) rotate(-1deg);
+                border-radius: 16px;
+            }
+            to {
+                transform: scaleX(1) rotate(-2.5deg);
+                border-radius: 8px;
+            }
+        }
+
         /* DISCORD MESSAGE */
 
         .discord-message {
