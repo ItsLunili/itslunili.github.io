@@ -86,7 +86,7 @@
         .highlight {
             position: relative;
             display: inline-block;
-            z-index: 1;
+            z-index: 1000;
         }
 
         .highlight::before {
