@@ -104,7 +104,7 @@ pricingToggle.addEventListener('click', () => {
     pricePeriods.forEach(el => {
         if (isAnnual) {
             const total = el.dataset.annualTotal;
-            el.innerHTML = 'per month <span class="period-yearly">($' + total + ' per year)</span>';
+            el.innerHTML = 'per month/per server <span class="period-yearly">($' + total + ' per year)</span>';
         } else {
             el.innerHTML = el.dataset.monthly;
         }
