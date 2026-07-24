@@ -640,14 +640,14 @@ https://templatemo.com/tm-614-quantix-saas
                         <span class="pricing-value" data-monthly="4.99" data-annual="3.49">4.99</span>
                     </div>
                     <div class="pricing-period" data-monthly="per month" data-annual-total="41.92">per month</div>
-                    <a href="#" class="btn btn-primary" onclick="return false;">Start Free Trial</a>
+                    <a href="#" class="btn btn-primary" onclick="document.getElementById('setupModal').classList.add('active'); return false;">Start Free Trial</a>
                     <div class="pricing-divider"></div>
                     <ul class="pricing-features">
-                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Up to 1M events/mo</li>
-                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Unlimited projects</li>
-                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Session replay</li>
-                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Feature flags &amp; A/B</li>
-                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Priority support</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Access to all commands</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Unlimited pronunciations</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Multiple simultaneous TTS sessions (MultiBot)</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Support the creator</li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>1 subscription per server.</li>
                     </ul>
                 </div>
 
@@ -658,7 +658,7 @@ https://templatemo.com/tm-614-quantix-saas
                         <span class="pricing-value free-label" data-monthly="Apply" data-annual="Apply">Apply</span>
                     </div>
                     <div class="pricing-period">For communities making a positive impact. Apply for free Premium access and bring a better voice experience to your members.<br><br>Think your community might not qualify? Take a look at the application anyway — we’d love to hear about what you’re building.</div>
-                    <a href="#" class="btn btn-secondary" onclick="return false;">Apply</a>
+                    <a href="https://forms.gle/ynxTfRjy8YCaR7q67" class="btn btn-secondary">Apply</a>
                     <div class="pricing-divider"></div>
                     <ul class="pricing-features">
                         <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Everything in Premium</li>
@@ -695,6 +695,55 @@ https://templatemo.com/tm-614-quantix-saas
             </div>
         </div>
     </section> -->
+    <!-- GET STARTED MODAL -->
+    <div class="setup-modal-overlay" id="setupModal">
+        <div class="setup-modal">
+            <button class="setup-modal-close" onclick="document.getElementById('setupModal').classList.remove('active')">×</button>
+
+            <div class="setup-modal-header">
+                <div class="feat-icon">
+                    <img alt="bot" style="height: 22px;" src="https://img.icons8.com/?size=100&id=e84LOziCFhNn&format=png&color=4b1478">
+                </div>
+                <h2>Get started with Better TTS<br>⭐️ Premium ⭐️</h2>
+                <p>Set up your server in just a few simple steps.</p>
+            </div>
+
+            <div class="setup-steps">
+
+                <div class="setup-step">
+                    <div class="setup-number">1</div>
+                    <div class="setup-content">
+                        <h3>Invite the bot</h3>
+                        <p>Add Better TTS to your Discord server and give it the required permissions.</p>
+                        <a class="btn btn-primary bot-invite-link">Invite Bot</a>
+                    </div>
+                </div>
+
+                <div class="setup-line"></div>
+
+                <div class="setup-step">
+                    <div class="setup-number">2</div>
+                    <div class="setup-content">
+                        <h3>Run the get premium command</h3>
+                        <p>Get a secure Stripe payment link to purchase premium.</p>
+                        <div class="setup-code">/get-premium</div>
+                    </div>
+                </div>
+
+                <div class="setup-line"></div>
+
+                <div class="setup-step">
+                    <div class="setup-number">3</div>
+                    <div class="setup-content">
+                        <h3>Follow the instructions on the payment page</h3>
+                        <p>Once the purchase is done, active premium on your server by running.</p>
+                        <div class="setup-code">/activate-premium</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="footer">
