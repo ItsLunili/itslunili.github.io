@@ -1,0 +1,28 @@
+.cancelled {
+    background: rgba(255,255,255,.4);
+    border-color: var(--border-subtle);
+    color: var(--text-secondary);
+}
+
+.embed-accent.cancelled {
+    background: linear-gradient(
+        180deg,
+        #c4c4c4,
+        #8d8d8d
+    );
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 1;
+}
