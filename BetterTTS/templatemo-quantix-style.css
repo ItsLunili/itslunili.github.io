@@ -20,9 +20,9 @@
 
             --accent: #A855F7;
             --accent-light: #a87fd4;
-            --accent-glow: rgba(168, 85, 247, 0.25);
+            --accent-glow: #a855f740;
             --accent-soft: rgba(169, 85, 247, 0.109);
-            --accent-border: rgba(168, 85, 247, 0.20);
+            --accent-border: #a855f733;
 
             --text-primary: #242033;
             --text-secondary: #6B6780;
@@ -1213,7 +1213,8 @@
             font-size: 12px;
             line-height: 1.8;
             color: var(--text-secondary);
-            overflow-x: auto;
+            /* overflow-x: auto; */
+
         }
 
         .code-block .c-key { color: var(--accent-light); }
