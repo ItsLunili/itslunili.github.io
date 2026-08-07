@@ -8,7 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
+// IFRAME
+if (window.self !== window.top) {
+  document.documentElement.style.minWidth = '1920px';
+}
 
 
 // NAVBAR
