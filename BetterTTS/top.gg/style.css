@@ -1,3 +1,42 @@
+:root {
+    --deep-space: #F7F5FC;
+    --surface-1: #FFFFFF;
+    --surface-2: #F5F1FA;
+    --surface-3: #ECE6F5;
+
+    --accent: #A855F7;
+    --accent-light: #a87fd4;
+    --accent-glow: #a855f740;
+    --accent-soft: rgba(169, 85, 247, 0.109);
+    --accent-border: #a855f733;
+
+    --text-primary: #242033;
+    --text-secondary: #6B6780;
+    --text-muted: #7a748b;
+
+    --border-subtle: rgba(36, 32, 51, 0.08);
+
+    --green: #34D399;
+    --amber: #FBBF24;
+    --rose: #FB7185;
+
+    --radius: 16px;
+    --radius-sm: 10px;
+    --radius-xs: 6px;
+    --radius-pill: 100px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    background-color: var(--deep-space);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
 /* ===== SECTIONS ===== */
 
 .section { padding: 120px 0; position: relative; }
