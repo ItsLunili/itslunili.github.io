@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --deep-space: #F7F5FC;
     --surface-1: #FFFFFF;
     --surface-2: #F5F1FA;
@@ -35,11 +35,11 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-}
+} */
 
 /* ===== SECTIONS ===== */
 
-.section { padding: 120px 0; position: relative; }
+.section { padding: 0px 0; position: relative; }
 
 .section-label {
     display: inline-flex;
@@ -155,7 +155,7 @@ body {
 }
 
 .cmd-name-cell {
-    padding: 10px 16px;
+    padding: 6px 16px;
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -188,7 +188,7 @@ body {
 
 .cmd-cell {
     text-align: center;
-    padding: 10px 8px;
+    padding: 6px 8px;
     font-size: 15px;
     color: #16a34a;
     font-weight: 600;
