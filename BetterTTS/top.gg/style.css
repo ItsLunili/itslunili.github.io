@@ -1,4 +1,4 @@
-/* :root {
+:root {
     --deep-space: #F7F5FC;
     --surface-1: #FFFFFF;
     --surface-2: #F5F1FA;
@@ -25,18 +25,6 @@
     --radius-xs: 6px;
     --radius-pill: 100px;
 }
-
-html { scroll-behavior: smooth; }
-
-body {
-    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
-    background-color: var(--deep-space);
-    color: var(--text-primary);
-    line-height: 1.6;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-} */
-
 /* ===== SECTIONS ===== */
 
 .section { padding: 0px 0; position: relative; }
